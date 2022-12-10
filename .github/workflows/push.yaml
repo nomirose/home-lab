@@ -1,0 +1,19 @@
+name: Push
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-checks:
+    name: Run checks
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/nomirose/devcontainer:edge
+    steps:
+      - uses: actions/checkout@v3
+      - run: make init
+      - uses: trunk-io/trunk-action@v1
+        with:
+          check-mode: all
+          arguments: --github-annotate-new-only=false

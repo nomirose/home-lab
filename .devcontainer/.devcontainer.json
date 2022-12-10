@@ -1,0 +1,29 @@
+{
+  "image": "ghcr.io/nomirose/devcontainer:edge",
+  "remoteUser": "root",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.defaultFormatter": "trunk.io"
+      },
+      // cspell:disable
+      "extensions": [
+        "codezombiech.gitignore",
+        "david-reis.crashacters",
+        "EditorConfig.EditorConfig",
+        "ms-azuretools.vscode-docker",
+        "nhoizey.gremlins",
+        "PascalReitermann93.vscode-yaml-sort",
+        "redhat.vscode-yaml",
+        "richie5um2.vscode-sort-json",
+        "sandcastle.whitespace",
+        "shardulm94.trailing-spaces",
+        "tetradresearch.vscode-h2o",
+        "trunk.io",
+        "Tyriar.sort-lines",
+        "valentjn.vscode-ltex",
+        "xshrim.txt-syntax"
+      ]
+    }
+  }
+}

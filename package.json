@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@trunkio/launcher": "^1.1.0"
+  }
+}
