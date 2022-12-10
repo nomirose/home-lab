@@ -11,4 +11,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: make init
+      - run: ls -l /__w/home-lab
       - uses: trunk-io/trunk-action@v1
