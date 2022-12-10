@@ -1,0 +1,19 @@
+name: Nightly
+on:
+  schedule:
+    - cron: 0 8 * * *
+  workflow_dispatch: {}
+
+jobs:
+  check:
+    name: Check and upload
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/nomirose/devcontainer:edge
+    steps:
+      - uses: actions/checkout@v3
+      - run: make init
+      - uses: trunk-io/trunk-action@v1
+        with:
+          arguments: --github-annotate-new-only=false
+          trunk-token: ${{ secrets.TRUNK_TOKEN }}

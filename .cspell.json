@@ -1,0 +1,10 @@
+{
+  "version": "0.2",
+  "language": "en-US",
+  "caseSensitive": false,
+  "allowCompoundWords": true,
+  "dictionaries": ["vocab"],
+  "dictionaryDefinitions": [
+    { "name": "vocab", "path": ".trunk/vocab.txt" }
+  ]
+}
